@@ -31,7 +31,7 @@ from .util import pack_id, get_file_name
 
 log = logging.getLogger(__name__)
 
-client = TelegramClient("bot",api_id, api_hash).start(bot_token=session_name)
+client = TelegramClient("bot",api_id, api_hash)
 transfer = ParallelTransferrer(client)
 
 
